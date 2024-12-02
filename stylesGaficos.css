@@ -1,0 +1,190 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+body.fade-out {
+    opacity: 0;
+}
+
+.navbar {
+    width: 200px;
+    background-color: #10384f;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.navbar .logo {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+}
+
+.navbar ul li {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.navbar ul li a {
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.navbar ul li a:hover {
+    background-color: #575757;
+}
+
+.navbar ul li a .nav-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.content {
+    margin-left: 220px;
+    width: calc(100% - 220px);
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    max-width: 800px; /* Reduce el tamaño máximo del contenedor */
+    width: 100%;
+}
+
+.grid-item {
+    background-color: #fff;
+    padding: 10px; /* Reduce el padding de los elementos */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, background-color 0.2s;
+    text-align: center;
+}
+
+.grid-item:hover {
+    transform: scale(1.05);
+    background-color: #e0f7fa;
+}
+
+.grid-item img {
+    max-width: 50px; /* Ajusta el tamaño de las imágenes a 50px */
+    height: auto;
+    border-radius: 8px;
+}
+
+h2 a {
+    text-decoration: none;
+    color: #333;
+}
+
+h2 a:hover {
+    color: #00796b;
+}
+
+/* Fondo de imagen para secciones específicas */
+.fondo-imagen {
+    background-size: cover;
+    background-position: center;
+    color: #00ffff; /* Verde agua claro */
+}
+
+.quienes-somos.fondo-imagen {
+    background-image: url('C:/Users/GPLQU/OneDrive - Bayer/Desktop/HSEPortalWeb/Imagenes/Saludimg.png');
+}
+
+.aplicaciones.fondo-imagen {
+    background-image: url('C:/Users/GPLQU/OneDrive - Bayer/Desktop/HSEPortalWeb/Imagenes/AmbienteImg.png');
+}
+
+.graficos.fondo-imagen {
+    background-image: url('C:/Users/GPLQU/OneDrive - Bayer/Desktop/HSEPortalWeb/Imagenes/SeguidadImg.png');
+}
+
+/* Colores de fondo para las demás secciones */
+.quienes-somos {
+    background-color: #ff3162;
+}
+
+.aplicaciones {
+    background-color: #89d329;
+}
+
+.graficos {
+    background-color: #00bcff;
+}
+
+.sshe-strategy {
+    background-color: #624963;
+}
+
+/* Alinear las secciones de "Equipos críticos" e "Intelex" debajo de "Gatillo de seguridad" */
+#equipos-criticos, #intelex {
+    grid-column: span 3;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .navbar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .navbar ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .navbar ul li {
+        text-align: center;
+        margin: 10px 0;
+    }
+}
+
+/* Estilos para los botones */
+.btn-verde {
+    background-color: transparent;
+    color: black;
+    border: 2px solid black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-verde:hover {
+    background-color: black;
+    color: white;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HSE - Aplicaciones</title>
+    <link rel="stylesheet" href="stylesAppGatillo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+</head>
+<body>
+    <div class="navbar">
+        <img src="C:\Users\GPLQU\OneDrive - Bayer\Desktop\Excel de Ambiente -Soifa-Fabri\Para Power App\Logo Bayer Cor com Branco.png" alt="Bayer Logo" class="logo">
+        <ul>
+            <li><a href="C:\Users\GPLQU\OneDrive - Bayer\Desktop\HSEPortalWeb\HSEPortalWeb.html" class="smooth-transition"><img src="https://cdn-icons-png.freepik.com/512/13653/13653304.png?ga=GA1.1.290884279.1730904595" alt="Inicio" class="nav-icon"> Inicio</a></li>
+            <li><a href="#contact"><img src="https://cdn-icons-png.freepik.com/512/13653/13653280.png?ga=GA1.1.290884279.1730904595" alt="Contacto" class="nav-icon"> Contacto</a></li>
+            <li><a href="C:\Users\GPLQU\OneDrive - Bayer\Desktop\HSEPortalWeb\Apps.html" class="smooth-transition"><img src="https://cdn-icons-png.freepik.com/512/13653/13653008.png?ga=GA1.1.290884279.1730904595" alt="Sharepoint" class="nav-icon"> Aplicaciones</a></li>
+            <li><a href="C:\Users\GPLQU\OneDrive - Bayer\Desktop\HSEPortalWeb\Graficos.html" class="smooth-transition"><img src="https://cdn-icons-png.freepik.com/512/13653/13653024.png?ga=GA1.1.290884279.1730904595" alt="Sharepoint" class="nav-icon"> Graficos</a></li>
+
+			<li><a href="https://bayergroup.sharepoint.com/sites/007473/default.aspx" class="smooth-transition"><img src="https://cdn.icon-icons.com/icons2/2397/PNG/512/microsoft_sharepoint_logo_office_icon_145722.png" alt="Sharepoint" class="nav-icon"> Sharepoint</a></li>
+        </ul>
+		<img src="C:\Users\GPLQU\OneDrive - Bayer\Pictures\Screenshots\HSELogo.png" alt="Bayer Logo" class="logo">
+
+    </div>
+
+    <div class="content">
+        <div class="portada" style="margin-right: 200px; margin-left: 200px;">
+            <h1>Aplicación Gatillo de serguridad</h1>
+            <img src="https://cdn-icons-png.freepik.com/512/1962/1962520.png?ga=GA1.1.290884279.1730904595" alt="Portada" class="portada-imagen" style="height: 100px;">
+            <p> Aplicación para gatillo de seguridad que permite el CRUD (create read update y delete) de un formulario el cual se usa para medir el riesgo que hay en cierta sector, dando así un indicador de accidentes el cual ayuda a tomar medidas de seguridad lo antes posible. La app permite no solo la automatización de carga de formulario y el calculo de riesgo sino que además permite tener administradores los cuales puede hacer CRUD de sectores, turnos, preguntas del formulario y administradores, permitiendo así que sea mas flexible en caso de que se realicen cambios en la modalidad</p>
+            <div class="carrusel">
+                <div><img src="C:\Users\GPLQU\OneDrive - Bayer\Pictures\Screenshots\Captura de pantalla 2024-11-11 110000.png" alt="Imagen 1"></div>
+                <div><img src="C:\Users\GPLQU\OneDrive - Bayer\Pictures\Screenshots\Captura de pantalla 2024-11-11 110030.png"alt="Imagen 2"></div>
+                <div><img src="C:\Users\GPLQU\OneDrive - Bayer\Pictures\Screenshots\Captura de pantalla 2024-11-11 110050.png" alt="Imagen 3"></div>
+            </div>
+            <br>
+            <a href="https://apps.powerapps.com/play/e/default-fcb2b37b-5da0-466b-9b83-0014b67a7c78/a/f3b10726-be60-40fc-84e6-1bb9a5a53be6?tenantId=fcb2b37b-5da0-466b-9b83-0014b67a7c78&sourcetime=1731333366523" target="_blank">
+                <button class="btn-verde">Ejecutar aplicación</button>
+            </a>
+			
+			<a href="https://app.powerbi.com/reportEmbed?reportId=8699a681-3e30-46d6-ac7c-d87030a357a6&autoAuth=true&ctid=fcb2b37b-5da0-466b-9b83-0014b67a7c78" target="_blank">
+                <button class="btn-verde">Abrir graficos</button>
+            </a>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.carrusel').slick({
+                dots: true,
+                infinite: true,
+                speed: 300,
+                slidesToShow: 1,
+                adaptiveHeight: true,
+                prevArrow: '<button type="button" class="slick-prev">Previous</button>',
+                nextArrow: '<button type="button" class="slick-next">Next</button>'
+            });
+        });
+    </script>
+    <script src="scriptsAppGatillo.js"></script>
+</body>
+</html>
