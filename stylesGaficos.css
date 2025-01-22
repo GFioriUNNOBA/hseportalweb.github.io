@@ -115,15 +115,15 @@ h2 a:hover {
 }
 
 .quienes-somos.fondo-imagen {
-    background-image: url('C:/Users/GPLQU/OneDrive - Bayer/Desktop/HSEPortalWeb/Imagenes/Saludimg.png');
+    background-image: url('./Saludimg.png');
 }
 
 .aplicaciones.fondo-imagen {
-    background-image: url('C:/Users/GPLQU/OneDrive - Bayer/Desktop/HSEPortalWeb/Imagenes/AmbienteImg.png');
+    background-image: url('./AmbienteImg.png');
 }
 
 .graficos.fondo-imagen {
-    background-image: url('C:/Users/GPLQU/OneDrive - Bayer/Desktop/HSEPortalWeb/Imagenes/SeguidadImg.png');
+    background-image: url('./SeguidadImg.png');
 }
 
 /* Colores de fondo para las demás secciones */
