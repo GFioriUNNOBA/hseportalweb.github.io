@@ -356,17 +356,6 @@ h2 a:hover {
     color: #00ffff; /* Verde agua claro */
 }
 
-.quienes-somos.fondo-imagen {
-    background-image: url('C:/Users/GPLQU/OneDrive - Bayer/Desktop/HSEPortalWeb/Imagenes/Saludimg.png');
-}
-
-.aplicaciones.fondo-imagen {
-    background-image: url('C:/Users/GPLQU/OneDrive - Bayer/Desktop/HSEPortalWeb/Imagenes/AmbienteImg.png');
-}
-
-.graficos.fondo-imagen {
-    background-image: url('C:/Users/GPLQU/OneDrive - Bayer/Desktop/HSEPortalWeb/Imagenes/SeguidadImg.png');
-}
 
 /* Colores de fondo para las demás secciones */
 .quienes-somos {
